@@ -1,0 +1,31 @@
+:host {
+    display: block;
+    background-color: rgb(15, 203, 236);
+    color: black;          
+    padding: 20px;
+    height: 100%;          
+    width: 100%;           
+    box-sizing: border-box;
+  }
+  
+ img {
+        width: 100%;
+        height: 500px;
+      }
+
+
+.specialties {
+    text-align: center;     
+    font-size: 2rem;        
+    color: #007bff;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;    
+    font-weight: bold;      
+  }
+
+

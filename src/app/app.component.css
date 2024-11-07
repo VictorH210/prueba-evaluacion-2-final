@@ -1,0 +1,9 @@
+:host {
+    display: block;
+    background-color: rgb(15, 203, 236);
+    color: black;          
+    padding: 20px;
+    height: 100%;          
+    width: 100%;           
+    box-sizing: border-box;
+  }

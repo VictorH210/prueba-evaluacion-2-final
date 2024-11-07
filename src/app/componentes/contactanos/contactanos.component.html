@@ -1,0 +1,39 @@
+<div class="container mt-5">
+    <h1>Formulario de Contacto</h1>
+  
+    <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" class="row g-3">
+      <div class="col-md-6">
+        <label for="inputNombre" class="form-label">Nombre</label>
+        <input type="text" id="inputNombre" class="form-control" name="nombre" ngModel required>
+      </div>
+  
+      <div class="col-md-6">
+        <label for="inputApellido" class="form-label">Apellido</label>
+        <input type="text" id="inputApellido" class="form-control" name="apellido" ngModel required>
+      </div>
+  
+      <div class="col-md-12">
+        <label for="inputEmail" class="form-label">Correo electrónico</label>
+        <input type="email" id="inputEmail" class="form-control" name="email" ngModel required>
+      </div>
+  
+      <div class="col-md-12">
+        <label for="inputTelefono" class="form-label">Teléfono</label>
+        <input type="tel" id="inputTelefono" class="form-control" name="telefono" ngModel required>
+      </div>
+  
+      <div class="col-md-12">
+        <label for="inputMensaje" class="form-label">Mensaje</label>
+        <textarea id="inputMensaje" class="form-control" name="mensaje" rows="4" ngModel required></textarea>
+      </div>
+  
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+    </form>
+
+    <div *ngIf="responseMessage" class="message" style="font-weight: bold; color: blue; margin-top: 20px;">
+     Hola <span style="color: black">{{ nombre }} {{ apellido }}</span>, su mensaje ha sido enviado correctamente.
+    </div>
+  </div>
+  
